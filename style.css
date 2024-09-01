@@ -533,56 +533,51 @@ body.night{
     animation-range: entry 0% cover 40%;
 }
 
-@media(max-width:1285px){
-    #menu-icon{
-        display: block;
+/* ------------ Break Points ------------ */
+
+/* For 1250px */
+@media screen and (max-width: 1250px) {
+    .nav-bar
+    {
+        padding: 0 10rem;
     }
-    .navbar{
+}
+
+
+/* For 1000px */
+@media screen and (max-width: 1000px) {
+    
+    .nav-items
+    {
         position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding:1rem 3rem;
-        background: var(--bg-color);
-        border-bottom-left-radius:2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        display: none;
-    }
-    .navbar a{
+        top: -50rem;
+        width: 100%;
+        height: 15rem;
+        padding-top:2rem ;
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: var(--text-color);
+        transition: 0.3s ease-in-out;
+        background:rgba(0,0,0,0.03);
+        backdrop-filter: blur(10px);
     }
-    .navbar.active{
-        display: block;
-    }
-    .gradiant-btn{
-        display: none;
-    }
-    .home{
-        flex-direction: column-reverse;
-        margin: 5rem 0;
-        gap: 5rem;
-    }
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
-    .home-img{
-        width: 10vw;
-    }
-    .about{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .about h2{
-        text-align: center;
-        margin: 2rem 0;
-    }
-    .contact form{
-        flex-direction: column;
+    .nav-items.active
+    {
+        top: 5.85rem;
     }
 
+    #menu-icon
+    {
+        margin-top: 1rem;
+        margin-right: 5rem;
+        display: block;
+    }
+   
+   .nav-list{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+   }
+   label{
+    top:6rem;
+   }
 }
