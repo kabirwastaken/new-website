@@ -49,6 +49,8 @@ body{
     display:none;
 }
 
+
+
 span{
     background: linear-gradient(
         270deg,
@@ -58,6 +60,31 @@ span{
     background-clip: text;
     color: transparent;
 }
+
+/*.logo{
+    
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color:var(--text-color);
+    margin-right: 3.5rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}*/
 .space{
     width: 5rem;
 }
@@ -270,7 +297,7 @@ section{
 @keyframes words{
     0%,
     20%{
-        content: "Sucker for Money";
+        content: "Nigger";
     }
     21%,
     40%{
@@ -514,7 +541,7 @@ label{
     width: 45px;
     height: 22px;
     right: 20rem;
-    top: 4.5rem;
+    top: 0rem;
     border: 2px solid;
     border-radius: 20px;
 }
